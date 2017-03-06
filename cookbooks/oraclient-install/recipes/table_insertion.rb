@@ -9,8 +9,8 @@
 bash 'Select all users from dba_users' do             
   code <<-EOH
     sqlplus64 system/LetsDocker@sql-server:1521/ORCLPDB1 <<-SQLEOH
-    INSERT INTO demo_dev_env1 (id, data)
-    VALUES (66, 'Esta prueba es para los ambientes de Desarrollo');
+    INSERT INTO demo_dev_env (id, data)
+    VALUES (66, 'This test is only required for Dev environments');
     exit;
     SQLEOH
   EOH
