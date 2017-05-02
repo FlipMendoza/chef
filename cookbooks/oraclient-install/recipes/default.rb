@@ -2,21 +2,25 @@
 # Cookbook Name:: oraclient-install
 # Recipe:: default
 #
-# Copyright 2017, YOUR_COMPANY_NAME
+# Copyright 2017, Softtek
 #
 # All rights reserved - Do Not Redistribute
 #
-execute "apt-get update" do
-  command "apt-get update"
-end
+#execute "Clean all repo lists" do
+#  command "apt-get clean"
+#end
 
-execute "Installing alien package" do
-  command "apt-get -y install alien"
-end
+#execute "apt-get update" do
+#  command "apt-get update"
+#end
 
-execute "Installing required libs" do
-  command "apt-get install -y libaio1"
-end
+#execute "Installing alien package" do
+#  command "apt-get install -y alien --fix-missing"
+#end
+
+#execute "Installing required libs" do
+#  command "apt-get install -y libaio1"
+#end
 
 remote_file '/root/SqlPlus_Client.tar' do
   source 'http://nexus:8081/nexus/content/repositories/thirdparty/Oracle/SqlPlus_Client/1/SqlPlus_Client-1.tar'
