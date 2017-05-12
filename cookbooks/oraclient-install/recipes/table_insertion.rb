@@ -10,7 +10,7 @@ bash 'Select all users from dba_users' do
   code <<-EOH
     sqlplus64 system/LetsDocker@sql-server:1521/ORCLPDB1 <<-SQLEOH
     INSERT INTO demo_qa_env (id, data)
-    VALUES (64, 'This test is only required for QA environments as for this DEMO');
+    VALUES (64, 'This test is only required for this DEMO');
     exit;
     SQLEOH
   EOH
