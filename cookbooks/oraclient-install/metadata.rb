@@ -1,6 +1,6 @@
 name             'oraclient-install'
-maintainer       'Softtek'
-maintainer_email 'luis.mendoza@softtek.com'
+maintainer       'Palo-IT'
+maintainer_email 'fmendoza@palo-it.com'
 license          'All rights reserved'
 description      'Installs/Configures an oracle SQL client'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
